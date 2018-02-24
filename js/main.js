@@ -195,7 +195,7 @@
 			var header = $('#fh5co-header'),
 				scrlTop = $(this).scrollTop();
 
-			if ( scrlTop > 500 && scrlTop <= 2000 ) {
+			if ( scrlTop > 500) {
 				header.addClass('navbar-fixed-top fh5co-animated slideInDown');
 			} else if ( scrlTop <= 500) {
 				if ( header.hasClass('navbar-fixed-top') ) {
@@ -263,7 +263,7 @@
 			    	}, 500);	
 			    	
 			   }
-			   event.preventDefault();
+			  // event.preventDefault();
 
 			});
 		}
