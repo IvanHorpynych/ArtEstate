@@ -1770,40 +1770,65 @@ ul > li {
     background-position: center center;
     z-index: 999;
 }
+@media(min-width: 768px) {
+    #start-form{
+        display: flex;
+    }
 
+    .contacts-form {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contacts-content{
+        width: 60%;
+    }
+    #contactform{
+        width: 40%;
+    }
+}
+@media (max-width: 768px) {
+    .contacts-form {
+        display: flex;
+    }
+    .form-control, .form-group{
+        width: 99%;
 
-/*
-#p_prldr{
-    position: absolute;
-    left: 0;
-    top: 0;
-    right:0;
-    bottom:0;
-    background: #7a7e89;
-    z-index: 999;}
-.contpre small{font-size:25px;}
+    }
+}
+#submit-block{
+    color: #ee9222;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 20em;
+    background: #444853;
+    opacity: 4;
+}
+.contacts-content{
+    color: #ee9222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20em;
+    background: url(../images/slide_1.jpg) no-repeat;
+    background-size: 100%;
+}
+.form-content{
+    padding:2em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #444853;
+}
+.form-control{
+    background: white;
+}
 
-.contpre{
-    width: 250px;
-    height: 100px;
-    position: absolute;
-    left: 50%;top: 48%;
-    margin-left:-125px;
-    margin-top:-75px;
-    color:#fff;
-    font-size:40px;
-    letter-spacing:-2px;
-    text-align:center;
-    line-height:35px;}
-
-#p_prldr .svg_anm {
-    position: absolute;
-    width: 41px;
-    height: 41px;
-    background: url(../images/three-dots.svg) center center no-repeat;
-    background-size:41px;
-    margin: -16px 0 0 -16px;}
-*/
+#sendform{
+    height: 20em;
+}
 
 /*# sourceMappingURL=style.css.map */
 

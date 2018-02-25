@@ -28,5 +28,23 @@ $('#contactform').on('submit', function(event) {
     } else {
         event.preventDefault();
         submitForm();
+        $('#start-form').stop().css('display', 'none').animate({opacity: 0}, 2000);
+        $('#submit-block').stop().css('display', 'flex').animate({opacity: 1}, 2000);
+
+        $('#submit-block')
+            // .delay(2000)
+            .queue(function (next) {
+                $(this).stop().css('display', 'none').animate({opacity: 2}, 2000);
+                next();
+            });
+        $('#start-form')
+            // .delay(2000)
+            .queue(function (next) {
+                $(this).stop().css('display', 'flex').animate({opacity: 3}, 2000);
+                next();
+            });
+        document.getElementById('contactform-name').value = '';
+        document.getElementById('contactform-email').value = '';
+        document.getElementById('contactform-message').value = '';
     }
 });
