@@ -1,13 +1,14 @@
 var submitForm;
 
-submitForm = function() {
+submitForm = function () {
     var form_data;
     form_data = $('#contactform').serialize();
     $.ajax({
         type: 'POST',
         url: 'form-process.php',
         data: form_data,
-        success: function(text) {
+        success: function (text) {
+            console.log(data);
             console.log('ELSE');
             if (text === 'success') {
                 $('#contactform')[0].reset();
@@ -20,7 +21,7 @@ submitForm = function() {
 };
 
 
-$('#contactform').on('submit', function(event) {
+$('#contactform').on('submit', function (event) {
     if (event.isDefaultPrevented()) {
         console.log('IF');
         $('.alert-fail').show(0);
@@ -28,23 +29,27 @@ $('#contactform').on('submit', function(event) {
     } else {
         event.preventDefault();
         submitForm();
-        $('#start-form').stop().css('display', 'none').animate({opacity: 0}, 2000);
-        $('#submit-block').stop().css('display', 'flex').animate({opacity: 1}, 2000);
-
-        $('#submit-block')
-            // .delay(2000)
-            .queue(function (next) {
-                $(this).stop().css('display', 'none').animate({opacity: 2}, 2000);
-                next();
-            });
-        $('#start-form')
-            // .delay(2000)
-            .queue(function (next) {
-                $(this).stop().css('display', 'flex').animate({opacity: 3}, 2000);
-                next();
-            });
+        $('.sendform .text-block').eq(0).addClass('active');
+        blockAnimate();
         document.getElementById('contactform-name').value = '';
         document.getElementById('contactform-email').value = '';
-        document.getElementById('contactform-message').value = '';
+        document.getElementById('contactform-phone').value = '';
+        blockAnimate();
     }
+
+    function blockAnimate() {
+        var length = $('.sendform .text-block').length - 1;
+        $('.sendform .text-block').each(function (index) {
+            if ($(this).hasClass('active') && index != length) {
+                $(this).removeClass('active').fadeOut(1000).next('.text-block').addClass('active').fadeIn(1000);
+                return false;
+            } else if (index == length) {
+                $(this).removeClass('active').fadeOut(1000);
+                $('.sendform .text-block').eq(0).addClass('active').fadeIn(1000);
+                return false;
+            }
+        });
+    };
+
+
 });

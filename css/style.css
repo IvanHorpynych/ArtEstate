@@ -1785,32 +1785,36 @@ ul > li {
     #contactform{
         width: 40%;
     }
+    #submit-block{
+        height: 20em;
+        top: -20em;
+    }
 }
 @media (max-width: 768px) {
     .contacts-form {
         display: flex;
+        flex-direction: column;
     }
     .form-control, .form-group{
         width: 99%;
 
     }
+    #submit-block{
+        height: 40em;
+        top: -40em;
+    }
 }
-#submit-block{
-    color: #ee9222;
-    display: none;
-    justify-content: space-around;
-    align-items: center;
-    height: 20em;
-    background: #444853;
-    opacity: 4;
+.text-block{
+    position: relative;
 }
+
 .contacts-content{
     color: #ee9222;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 20em;
-    background: url(../images/slide_1.jpg) no-repeat;
+    background: url(../images/slide_1.jpg);
     background-size: 100%;
 }
 .form-content{
@@ -1825,11 +1829,23 @@ ul > li {
 .form-control{
     background: white;
 }
-
 #sendform{
     height: 20em;
 }
 
+#sendform-text{
+    padding-top: 130px;
+}
+#sendform-text h1{
+    color: #ee9222;
+}
+#submit-block{
+    position: relative;
+    display: none;
+    text-align: center;
+    background: #444853;
+    opacity: 4;
+}
 /*# sourceMappingURL=style.css.map */
 
 
