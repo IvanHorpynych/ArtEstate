@@ -1,0 +1,26 @@
+#scroller{
+  position: fixed;
+  /** позиция кнопки scroll to top **/
+  right:30px;
+  bottom: 30px;
+  /** картинка кнопки наверх**/
+  background: #444853 url(../images/arrowup.png) no-repeat left top;
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  /** скругляем углы серого фона **/
+  border-radius: 20px;
+  /** скрываем кнопку в начале **/
+  display:none;
+  /** добавляем красоты- прозрачность и плавное проявление при наведении **/
+  opacity: 0.3;
+  -webkit-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out;
+  z-index: 999999;
+}
+#scroller:hover {
+  /** при наведении мыши делаем все ярче и отбрасываем тень **/
+  opacity: 0.5;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}

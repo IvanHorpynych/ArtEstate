@@ -704,7 +704,7 @@ p {
 }
 
 .fh5co-social li a i {
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .fh5co-social li a:hover {
@@ -1795,27 +1795,42 @@ ul > li {
         display: flex;
         flex-direction: column;
     }
-    .form-control, .form-group{
-        width: 99%;
 
-    }
     #submit-block{
         height: 40em;
         top: -40em;
     }
 }
+
+.form-control, .form-group{
+    width: 99%;
+}
+#contactform-submit{
+    width: 99%;
+}
+
+.button{
+    width: 99%;
+}
+
 .text-block{
     position: relative;
 }
 
 .contacts-content{
-    color: #ee9222;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 20em;
-    background: url(../images/slide_1.jpg);
+    background: url(../images/slide_1.jpg)no-repeat center center;
     background-size: 100%;
+}
+
+.contacts-content h3{
+    text-align: center;
+    color: #000000;
+    font-weight: 1000;
+    line-height: 2.1;
 }
 .form-content{
     padding:2em;
