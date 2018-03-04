@@ -3,7 +3,7 @@ $errorMSG = "";
 
 $to = "eliz@artestate.com.ua";
 $name = $_POST['name'];
-$subject = 'New message';
+$subject = 'Заявка на консультацию с сайта';
         $message = '
                 <html>
                     <head>

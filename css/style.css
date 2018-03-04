@@ -1076,9 +1076,10 @@ ul > li {
     padding-bottom: 13px;
 }
 
-#fh5co-content > div > div.row.r-pb > div > p{
+#fh5co-content > div > div.row.r-pb > div > p {
     margin-top: 60px;
 }
+
 /*----------------------------------- Mobile --------------------------------------------------------------------*/
 
 @media screen and (max-width: 600px) {
@@ -1283,7 +1284,7 @@ ul > li {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 
     body {
         font-size: 17px;
@@ -1361,20 +1362,20 @@ ul > li {
         font-size: 21px;
     }
 
-    .fh5co-nav-toggle{
+    .fh5co-nav-toggle {
         top: 3px;
     }
 
-    #fh5co-header.navbar-top{
+    #fh5co-header.navbar-top {
         padding-top: 8px;
     }
 
-    #fh5co-header{
+    #fh5co-header {
         padding-bottom: 0px;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1024px) and (min-height: 1300px){
+@media screen and (min-width: 992px) and (max-width: 1024px) and (min-height: 1300px) {
     #fh5co-about > div > div > div > div.col-md-4 > h3 {
         margin-top: 5%;
         font-size: 22px;
@@ -1396,7 +1397,7 @@ ul > li {
     #logo {
         top: 85px;
         position: relative;
-        height: 76vh;
+        height: 12.5em;
     }
 
     #fh5co-home .flexslider .fh5co-text .fh5co-go a {
@@ -1418,15 +1419,15 @@ ul > li {
         min-height: 0px;
     }
 
-    .fh5co-nav-toggle{
+    .fh5co-nav-toggle {
         top: 3px;
     }
 
-    #fh5co-header.navbar-top{
+    #fh5co-header.navbar-top {
         padding-top: 8px;
     }
 
-    #fh5co-header{
+    #fh5co-header {
         padding-bottom: 0px;
     }
 
@@ -1520,8 +1521,6 @@ ul > li {
 
 }
 
-
-
 @media screen and (min-width: 960px) and (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
     #logo {
         width: 350px;
@@ -1544,14 +1543,12 @@ ul > li {
 
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    #fh5co-about > div > div > div > div.col-md-4 > h3{
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    #fh5co-about > div > div > div > div.col-md-4 > h3 {
         margin-top: 5%;
         font-size: 22px;
     }
 }
-
-
 
 @media only screen and (min-width: 1400px) {
     body {
@@ -1571,8 +1568,7 @@ ul > li {
         font-size: 15px;
     }
 
-
-    #fh5co-about > div > div > div > div.col-md-8 > p{
+    #fh5co-about > div > div > div > div.col-md-8 > p {
         font-size: 18px;
     }
 }
@@ -1812,59 +1808,67 @@ ul > li {
     background-position: center center;
     z-index: 999;
 }
-@media(min-width: 768px) {
-    #start-form{
+
+@media (min-width: 768px) {
+    #start-form {
         display: flex;
     }
 
-    .contacts-form {
-        justify-content: space-around;
-        align-items: center;
-    }
-    .contacts-content{
-        width: 60%;
-    }
-    #contactform{
-        width: 40%;
-    }
-    #submit-block{
+    #submit-block {
         height: 20em;
         top: -20em;
     }
 }
 
-.form-control, .form-group{
-    width: 99%;
+@media (min-width: 769px) {
+    .contacts-form {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #contactform {
+        width: 40%;
+    }
+
+    .contacts-content {
+        width: 60%;
+    }
 }
-#contactform-submit{
+
+.form-control, .form-group {
     width: 99%;
 }
 
-.button{
+#contactform-submit {
     width: 99%;
 }
 
-.text-block{
+.button {
+    width: 99%;
+}
+
+.text-block {
     position: relative;
 }
 
-.contacts-content{
+.contacts-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 20em;
-    background: url(../images/slide_1.jpg)no-repeat center center;
+    background: url(../images/slide_1.jpg) no-repeat center center;
     background-size: 100%;
 }
 
-.contacts-content h3{
+.contacts-content h3 {
     text-align: center;
     color: #000000;
     font-weight: 1000;
     line-height: 2.1;
 }
-.form-content{
-    padding:2em;
+
+.form-content {
+    padding: 2em;
     height: 20em;
     display: flex;
     flex-direction: column;
@@ -1872,20 +1876,24 @@ ul > li {
     align-items: center;
     background: #444853;
 }
-.form-control{
+
+.form-control {
     background: white;
 }
-#sendform{
+
+#sendform {
     height: 20em;
 }
 
-#sendform-text{
+#sendform-text {
     padding-top: 130px;
 }
-#sendform-text h1{
+
+#sendform-text h1 {
     color: #ee9222;
 }
-#submit-block{
+
+#submit-block {
     position: relative;
     display: none;
     text-align: center;
@@ -1899,13 +1907,13 @@ ul > li {
         flex-direction: column;
     }
 
-    #submit-block{
+    #submit-block {
         height: 40em;
         top: -40em;
     }
 
-    .contacts-content{
-        background: url(../images/slide_1.jpg)center center fixed;
+    .contacts-content {
+        background: url(../images/slide_1.jpg) center center fixed;
     }
 
     .form-content {
@@ -1919,19 +1927,25 @@ ul > li {
     }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 320px) {
     .button {
-        width: 118%;
+        width: 100%;
         padding-top: 1em;
     }
 
     .fh5co-social {
         padding-top: 40px;
     }
+
     h3, .h3 {
         font-size: 22px;
     }
+
+    .form-content {
+        padding-top: 30px;
+    }
 }
+
 /*# sourceMappingURL=style.css.map */
 
 

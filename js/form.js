@@ -8,7 +8,6 @@ submitForm = function () {
         url: 'form-process.php',
         data: form_data,
         success: function (text) {
-            console.log(data);
             console.log('ELSE');
             if (text === 'success') {
                 $('#contactform')[0].reset();
