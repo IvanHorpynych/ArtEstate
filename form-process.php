@@ -16,7 +16,7 @@ $subject = 'New message';
                     </body>
                 </html>';
 $headers  = "Content-type: text/html; charset=utf-8 \r\n";
-$headers .= "From: site@artestate.com.ua"."\r\n";
+$headers .= "From: site@artestate.com.ua"."\r\n" . "Reply-To:"."\r\n";
 $success = mail($to, $subject, $message, $headers);
 
 if ($success && $errorMSG == ""){
