@@ -1343,7 +1343,7 @@ ul > li {
     }
 
     .head-title {
-        margin-top: 13%;
+        margin-top: 6%;
     }
 
     .fh5co-social li a i {
@@ -1359,6 +1359,18 @@ ul > li {
 @media screen and (max-width: 375px) {
     #fh5co-contact > div {
         font-size: 21px;
+    }
+
+    .fh5co-nav-toggle{
+        top: 3px;
+    }
+
+    #fh5co-header.navbar-top{
+        padding-top: 8px;
+    }
+
+    #fh5co-header{
+        padding-bottom: 0px;
     }
 }
 
@@ -1382,7 +1394,7 @@ ul > li {
 
 @media screen and (max-width: 570px) and (orientation: landscape) {
     #logo {
-        top: 71px;
+        top: 85px;
         position: relative;
         height: 76vh;
     }
@@ -1398,8 +1410,24 @@ ul > li {
         font-size: 17px;
     }
 
+    .fh5co-text h2 {
+        margin-top: 14%;
+    }
+
     #fh5co-home {
         min-height: 0px;
+    }
+
+    .fh5co-nav-toggle{
+        top: 3px;
+    }
+
+    #fh5co-header.navbar-top{
+        padding-top: 8px;
+    }
+
+    #fh5co-header{
+        padding-bottom: 0px;
     }
 
 }
@@ -1437,10 +1465,24 @@ ul > li {
     }
 }
 
+@media screen and (min-width: 601px) and (max-width: 670px) and (orientation: landscape) {
+    #logo {
+        width: auto;
+        top: 255px;
+        position: relative;
+        height: 65vh;
+    }
+
+    #fh5co-home > div > div.fh5co-text > div > div > h2 {
+        font-size: 18px;
+        margin-top: 22%;
+    }
+}
+
 @media screen and (min-width: 670px) and (max-width: 740px) and (orientation: landscape) {
 
     #logo {
-        top: 233px;
+        top: 247px;
         width: auto;
         position: relative;
         height: 60vh;
@@ -1790,17 +1832,6 @@ ul > li {
         top: -20em;
     }
 }
-@media (max-width: 768px) {
-    .contacts-form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #submit-block{
-        height: 40em;
-        top: -40em;
-    }
-}
 
 .form-control, .form-group{
     width: 99%;
@@ -1860,6 +1891,46 @@ ul > li {
     text-align: center;
     background: #444853;
     opacity: 4;
+}
+
+@media (max-width: 768px) {
+    .contacts-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #submit-block{
+        height: 40em;
+        top: -40em;
+    }
+
+    .contacts-content{
+        background: url(../images/slide_1.jpg)center center fixed;
+    }
+
+    .form-content {
+        padding: 0em;
+    }
+
+    #sendform-text {
+        padding-top: 430px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 321px) {
+    .button {
+        width: 118%;
+        padding-top: 1em;
+    }
+
+    .fh5co-social {
+        padding-top: 40px;
+    }
+    h3, .h3 {
+        font-size: 22px;
+    }
 }
 /*# sourceMappingURL=style.css.map */
 
