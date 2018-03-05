@@ -338,7 +338,7 @@ p {
 
 #fh5co-header.navbar-fixed-top #fh5co-main-nav ul li.active a {
     color: #f4a73e;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid #f4a73e;
 }
 
 /*
