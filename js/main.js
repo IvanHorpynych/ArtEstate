@@ -26,14 +26,14 @@
 
     var sliderMain = function () {
 
-        $('#fh5co-home .flexslider').flexslider({
+        $('.flexslider').flexslider({
             animation: "fade",
             slideshowSpeed: 5000
         });
 
-        $('#fh5co-home .flexslider .slides > li').css('height', $(window).height());
+        $('.flexslider .slides > li').css('height', $(window).height());
         $(window).resize(function () {
-            $('#fh5co-home .flexslider .slides > li').css('height', $(window).height());
+            $('.flexslider .slides > li').css('height', $(window).height());
         });
 
         $('.js-fh5co-next').on('click', function (event) {
