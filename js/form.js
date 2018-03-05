@@ -11,8 +11,6 @@ submitForm = function () {
             console.log('ELSE');
             if (text === 'success') {
                 $('#contactform')[0].reset();
-                $('.alert-success').show(0);
-                $('.navbar-fixed-top').addClass('hide');
                 return;
             }
         }
