@@ -1289,6 +1289,9 @@ ul > li {
     body {
         font-size: 17px;
     }
+    .fh5co-social {
+        padding-top: 15px;
+    }
 
     #fh5co-about .fh5co-text {
         width: auto;
@@ -1312,6 +1315,7 @@ ul > li {
     }
 
     #fh5co-header {
+        padding-bottom: 0px;
         background: #fff;
         top: 0;
     }
@@ -1363,11 +1367,11 @@ ul > li {
     }
 
     .fh5co-nav-toggle {
-        top: 3px;
+        top: 8px;
     }
 
     #fh5co-header.navbar-top {
-        padding-top: 8px;
+        padding-top: 15px;
     }
 
     #fh5co-header {
@@ -1443,7 +1447,7 @@ ul > li {
 
     #logo {
         width: auto;
-        top: 240px;
+        top: 220px;
         position: relative;
         height: 65vh;
     }
@@ -1469,14 +1473,14 @@ ul > li {
 @media screen and (min-width: 601px) and (max-width: 670px) and (orientation: landscape) {
     #logo {
         width: auto;
-        top: 255px;
+        top: 260px;
         position: relative;
-        height: 65vh;
+        height: 60vh;
     }
 
     #fh5co-home > div > div.fh5co-text > div > div > h2 {
         font-size: 18px;
-        margin-top: 22%;
+        margin-top: 24%;
     }
 }
 
@@ -1550,6 +1554,13 @@ ul > li {
     }
 }
 
+@media screen and (min-device-width: 1024px) and (orientation: landscape) {
+    #logo {
+        margin-top: 80px;
+        margin-bottom: -30px;
+        width: 15em;
+    }
+}
 @media only screen and (min-width: 1400px) {
     body {
         font-size: 22px;
@@ -1850,19 +1861,28 @@ ul > li {
 .text-block {
     position: relative;
 }
+#start-form .fh5co-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+    background: rgba(35, 38, 43, 0.88);
+}
 
 .contacts-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 20em;
-    background: url(../images/slide_1.jpg) no-repeat center center;
+    background: url(../images/Infocom/1st_floor/infocom_17.jpg) no-repeat center center;
     background-size: 100%;
 }
 
 .contacts-content h3 {
     text-align: center;
-    color: #000000;
+    color: #ed9222;
     font-weight: 1000;
     line-height: 2.1;
 }
@@ -1913,7 +1933,7 @@ ul > li {
     }
 
     .contacts-content {
-        background: url(../images/slide_1.jpg) center center fixed;
+        background: url(../images/Infocom/1st_floor/infocom_17.jpg) center center;
     }
 
     .form-content {
