@@ -4,7 +4,7 @@
 
 
     // iPad and iPod detection
-    var isiPad = function () {
+    /*var isiPad = function () {
         return (navigator.platform.indexOf("iPad") != -1);
     };
 
@@ -13,10 +13,10 @@
             (navigator.platform.indexOf("<i></i>Phone") != -1) ||
             (navigator.platform.indexOf("iPod") != -1)
         );
-    };
+    };*/
 
     var fullHeight = function () {
-        if (!isiPad() && !isiPhone()) {
+        if (!(!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform))) {
             $('.js-fullheight').css('height', $(window).height());
             $(window).resize(function () {
                 $('.js-fullheight').css('height', $(window).height());
@@ -24,18 +24,32 @@
         }
     };
 
+    function doOnOrientationChange() {
+        switch(window.orientation) {
+            case -90 || 90:
+                $('.flexslider .slides > li').css('height', $(window).height());
+                break;
+            default:
+                $('.flexslider .slides > li').css('height', $(window).height());
+                break;
+        }
+    }
+
     var sliderMain = function () {
 
         $('.flexslider').flexslider({
             animation: "fade",
             slideshowSpeed: 5000
         });
-
-        $('.flexslider .slides > li').css('height', $(window).height());
-        $(window).resize(function () {
+        if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
             $('.flexslider .slides > li').css('height', $(window).height());
-        });
-
+            window.addEventListener('orientationchange', doOnOrientationChange);
+        } else {
+            $('.flexslider .slides > li').css('height', $(window).height());
+            $(window).resize(function () {
+                $('.flexslider .slides > li').css('height', $(window).height());
+            });
+        }
         $('.js-fh5co-next').on('click', function (event) {
 
             event.preventDefault();
