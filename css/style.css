@@ -1852,7 +1852,7 @@ ul > li {
     top: 0;
     right: 0;
     bottom: 0;
-    background: #878787 url(../images/three-dots.svg) no-repeat;
+    background: #878787 url(../images/ripple.gif) no-repeat;
     background-position: center center;
     z-index: 999;
 }
