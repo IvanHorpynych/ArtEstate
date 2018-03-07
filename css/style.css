@@ -1456,9 +1456,9 @@ ul > li {
 
     #logo {
         width: auto;
-        top: 220px;
+        top: 80px;
         position: relative;
-        height: 65vh;
+        height: 60vh;
     }
 
     #fh5co-home > div > div.fh5co-text > div > div > h2 {
@@ -1541,8 +1541,8 @@ ul > li {
 
 @media screen and (min-width: 740px) and (max-width: 960px) and (orientation: landscape) {
     #logo {
-        width: 420px;
-        margin-top: -55px;
+        width: 260px;
+        margin-top: 70px;
         margin-bottom: 0px;
     }
 
@@ -1605,7 +1605,7 @@ ul > li {
 
 @media only screen and (min-width: 1400px) {
     body {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .fh5co-social li a i {
