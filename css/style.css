@@ -1368,6 +1368,14 @@ ul > li {
     #fh5co-contact > div {
         font-size: 25px;
     }
+
+     #fh5co-about > div > div > div > div.col-md-8 > p {
+            font-size: 14px;
+     }
+
+     #fh5co-about > div > div > div > div.col-md-4 > h3 {
+         padding-left: 0%;
+     }
 }
 
 @media screen and (max-width: 375px) {
@@ -1603,6 +1611,12 @@ ul > li {
     }
 }
 
+@media screen and (max-width: 1400px) and (min-width: 1200px){
+    #fh5co-about > div > div > div > div.col-md-8 > p{
+        font-size: 15.5px;
+    }
+}
+
 @media only screen and (min-width: 1400px) {
     body {
         font-size: 20px;
@@ -1622,8 +1636,9 @@ ul > li {
     }
 
     #fh5co-about > div > div > div > div.col-md-8 > p {
-        font-size: 18px;
+        font-size: 15px;
     }
+
 }
 
 /*----------------------------------- block-steps --------------------------------------------------------------------*/
