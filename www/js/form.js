@@ -20,7 +20,6 @@ submitForm = function () {
 
 $('#contactform').on('submit', function (event) {
     if (event.isDefaultPrevented()) {
-        console.log('IF');
         $('.alert-fail').show(0);
         $('.navbar-fixed-top').addClass('hide');
     } else {

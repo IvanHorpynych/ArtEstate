@@ -1934,7 +1934,7 @@ ul > li {
     justify-content: space-around;
     align-items: center;
     height: 20em;
-    background: url(../images/Infocom/1st_floor/infocom_17.jpg) no-repeat center center;
+    background: url(../images/Infocom/1st_floor/dizayn-interera-ofisa-infocom-17.jpg) no-repeat center center;
     background-size: 100%;
 }
 
@@ -1979,6 +1979,12 @@ ul > li {
     opacity: 4;
 }
 
+.header {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+}
+
 @media (max-width: 768px) {
     .contacts-form {
         display: flex;
@@ -1991,7 +1997,7 @@ ul > li {
     }
 
     .contacts-content {
-        background: url(../images/Infocom/1st_floor/infocom_17.jpg) center center;
+        background: url(../images/Infocom/1st_floor/dizayn-interera-ofisa-infocom-17.jpg) center center;
     }
 
     .form-content {
