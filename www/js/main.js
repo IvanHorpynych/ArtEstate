@@ -363,7 +363,7 @@
         sliderMain();
         sliderTestimony();
         offcanvasMenu();
-        preloader();
+        /*preloader();*/
         mainMenuSticky();
         mobileMenuOutsideClick();
         parallax();
