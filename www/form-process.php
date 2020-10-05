@@ -1,7 +1,7 @@
 <?php
 $errorMSG = "";
 
-$to = "eliz@artestate.com.ua";
+$to = "lizaveta.odintsova@buroodintsova.com.ua";
 $name = $_POST['name'];
 $subject = 'Заявка на консультацию с сайта';
         $message = '
